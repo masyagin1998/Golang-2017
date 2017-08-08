@@ -21,10 +21,10 @@ func main() {
 		}
 		defer file.Close()
 		fileScanner := bufio.NewScanner(file)
-		lineCounter := uint64(0)
+		linesCounter := uint64(0)
 		for fileScanner.Scan() {
-			lineCounter++
+			linesCounter++
 		}
-		fmt.Println(lineCounter)
+		fmt.Println(linesCounter)
 	}
 }
